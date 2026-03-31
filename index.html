@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GTA VI Countdown</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* Background slideshow */
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 1.2s ease-in-out;
+}
+
+/* Active slide animation (zoom effect) */
+.bg.active {
+  opacity: 1;
+  animation: zoomEffect 6s ease-in-out forwards;
+}
+
+/* Ken Burns zoom animation */
+@keyframes zoomEffect {
+  0%   { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* Dark overlay */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2));
+}
+
+/* Content */
+.content {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+/* Countdown */
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+/* Time block */
+.block {
+  text-align: center;
+}
+
+/* Labels */
+.label {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+/* Colon styling */
+.separator {
+  font-size: 60px;
+  opacity: 0.7;
+  margin: 0 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Images -->
+<img class="bg active" src="images/1.avif">
+<img class="bg" src="images/2.avif">
+<img class="bg" src="images/3.avif">
+<img class="bg" src="images/4.avif">
+<img class="bg" src="images/5.avif">
+<img class="bg" src="images/6.avif">
+<img class="bg" src="images/7.avif">
+<img class="bg" src="images/8.avif">
+<img class="bg" src="images/9.avif">
+<img class="bg" src="images/10.avif">
+<img class="bg" src="images/11.avif">
+<img class="bg" src="images/12.avif">
+<img class="bg" src="images/13.avif">
+<img class="bg" src="images/14.avif">
+<img class="bg" src="images/15.avif">
+
+<div class="overlay"></div>
+
+<div class="content">
+  <div class="title">GRAND THEFT AUTO VI LAUNCHES IN</div>
+
+  <div class="countdown">
+    <div class="block">
+      <div id="days">0</div>
+      <div class="label">DAYS</div>
+    </div>
+
+    <div class="separator">:</div>
+
+    <div class="block">
+      <div id="hours">00</div>
+      <div class="label">HOURS</div>
+    </div>
+
+    <div class="separator">:</div>
+
+    <div class="block">
+      <div id="minutes">00</div>
+      <div class="label">MINUTES</div>
+    </div>
+
+    <div class="separator">:</div>
+
+    <div class="block">
+      <div id="seconds">00</div>
+      <div class="label">SECONDS</div>
+    </div>
+  </div>
+</div>
+
+<!-- Audio -->
+<audio id="music" src="audio/music.mp3" autoplay loop></audio>
+
+<script>
+// ===== COUNTDOWN =====
+const TARGET = new Date("2026-11-19T00:00:00Z").getTime();
+
+function updateCountdown() {
+  const now = Date.now();
+  let diff = Math.floor((TARGET - now) / 1000);
+
+  if (diff < 0) diff = 0;
+
+  const d = Math.floor(diff / 86400);
+  const h = Math.floor((diff % 86400) / 3600);
+  const m = Math.floor((diff % 3600) / 60);
+  const s = diff % 60;
+
+  document.getElementById("days").innerText = d;
+  document.getElementById("hours").innerText = String(h).padStart(2, '0');
+  document.getElementById("minutes").innerText = String(m).padStart(2, '0');
+  document.getElementById("seconds").innerText = String(s).padStart(2, '0');
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+
+// ===== SLIDESHOW =====
+const slides = document.querySelectorAll(".bg");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3000);
+
+
+// ===== AUDIO FIX =====
+const audio = document.getElementById("music");
+audio.volume = 0.6;
+
+// window.addEventListener("load", () => {
+//   audio.play().catch(() => {});
+// });
+window.addEventListener("load", () => {
+  audio.play().then(() => {
+    setTimeout(() => {
+      audio.muted = false;
+      audio.volume = 0.6;
+    }, 1000);
+  }).catch(() => {});
+});
+
+</script>
+
+</body>
+</html>
