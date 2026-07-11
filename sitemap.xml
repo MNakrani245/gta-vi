@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://gta6countdown.com/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://gta6countdown.com/images/og-gta6-countdown.jpg</image:loc><image:title>GTA 6 Countdown to November 19, 2026</image:title></image:image>
+    <image:image><image:loc>https://gta6countdown.com/images/9.avif</image:loc><image:title>GTA 6 Countdown</image:title></image:image>
+    <image:image><image:loc>https://gta6countdown.com/images/10.avif</image:loc><image:title>Vice City in GTA 6</image:title></image:image>
+    <image:image><image:loc>https://gta6countdown.com/images/11.avif</image:loc><image:title>Leonida coastline in GTA 6</image:title></image:image>
+    <image:image><image:loc>https://gta6countdown.com/images/12.avif</image:loc><image:title>Leonida wetlands in GTA 6</image:title></image:image>
+  </url>
+</urlset>

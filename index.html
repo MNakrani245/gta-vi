@@ -1,204 +1,1112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>GTA VI Countdown</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GTA 6 Countdown — Live Timer to November 19, 2026</title>
+  <meta name="description" content="Watch the live GTA 6 countdown to November 19, 2026. Explore the confirmed release date, platforms, official trailers, Leonida locations and GTA VI artwork.">
+  <meta name="keywords" content="GTA 6 countdown, GTA VI countdown, GTA 6 release date, GTA 6 timer, Grand Theft Auto VI, GTA 6 November 19 2026">
+  <meta name="author" content="GTA 6 Countdown">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#ef6b5b">
+  <link rel="canonical" href="https://gta6countdown.com/">
+  <link rel="preload" as="image" href="images/hero-vintage-vice-city.jpg" type="image/jpeg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 
-<style>
-body {
-  margin: 0;
-  background: black;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
-}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GTA 6 Countdown">
+  <meta property="og:title" content="GTA 6 Countdown — Live Timer to November 19, 2026">
+  <meta property="og:description" content="The live countdown to Grand Theft Auto VI, plus official trailers, confirmed platforms and a tour of Leonida.">
+  <meta property="og:url" content="https://gta6countdown.com/">
+  <meta property="og:image" content="https://gta6countdown.com/images/og-gta6-countdown.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Jason and Lucia beneath the neon lights of Vice City in Grand Theft Auto VI">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GTA 6 Countdown — November 19, 2026">
+  <meta name="twitter:description" content="Track every day, hour, minute and second until GTA VI arrives.">
+  <meta name="twitter:image" content="https://gta6countdown.com/images/og-gta6-countdown.jpg">
 
-/* Background slideshow */
-.bg {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transform: scale(1);
-  transition: opacity 1.2s ease-in-out;
-}
+  <link rel="icon" href="images/gta6-countdown-icon.svg" type="image/svg+xml">
 
-/* Active slide animation (zoom effect) */
-.bg.active {
-  opacity: 1;
-  animation: zoomEffect 6s ease-in-out forwards;
-}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gta6countdown.com/#website",
+        "url": "https://gta6countdown.com/",
+        "name": "GTA 6 Countdown",
+        "description": "A live countdown to the release of Grand Theft Auto VI.",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "VideoGame",
+        "name": "Grand Theft Auto VI",
+        "alternateName": ["GTA 6", "GTA VI"],
+        "url": "https://www.rockstargames.com/VI",
+        "image": "https://gta6countdown.com/images/9.avif",
+        "datePublished": "2026-11-19",
+        "gamePlatform": ["PlayStation 5", "Xbox Series X", "Xbox Series S"],
+        "genre": ["Action-adventure", "Open world"],
+        "publisher": { "@type": "Organization", "name": "Rockstar Games" },
+        "description": "Grand Theft Auto VI is set in Leonida, home to Vice City and beyond."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "When is GTA 6 coming out?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Rockstar Games lists Grand Theft Auto VI for November 19, 2026." }
+          },
+          {
+            "@type": "Question",
+            "name": "What platforms will GTA 6 launch on?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The announced launch platforms are PlayStation 5 and Xbox Series X|S." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is GTA 6 set?",
+            "acceptedAnswer": { "@type": "Answer", "text": "GTA 6 is set in the state of Leonida, including the neon-soaked streets of Vice City." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
-/* Ken Burns zoom animation */
-@keyframes zoomEffect {
-  0%   { transform: scale(1); }
-  100% { transform: scale(1.1); }
-}
+  <style>
+    :root {
+      --ink: #100c19;
+      --ink-soft: #1b1428;
+      --paper: #f4ead8;
+      --peach: #ef9b78;
+      --coral: #ef6359;
+      --pink: #d85b9d;
+      --violet: #7450a8;
+      --lime: #c9e75f;
+      --white: #fffaf1;
+      --line: rgba(255, 250, 241, .18);
+      --container: min(1220px, calc(100% - 40px));
+      --display: "Barlow Condensed", Impact, sans-serif;
+      --body: "Inter", Arial, sans-serif;
+    }
 
-/* Dark overlay */
-.overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2));
-}
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--ink); }
+    body {
+      margin: 0;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 85% 10%, rgba(216, 91, 157, .16), transparent 28rem),
+        var(--ink);
+      font-family: var(--body);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    body.menu-open { overflow: hidden; }
+    img { display: block; width: 100%; }
+    a { color: inherit; }
+    button { font: inherit; }
+    ::selection { color: var(--ink); background: var(--lime); }
+    .skip-link {
+      position: fixed; z-index: 1000; left: 1rem; top: 1rem; padding: .8rem 1rem;
+      color: var(--ink); background: var(--lime); transform: translateY(-160%);
+    }
+    .skip-link:focus { transform: translateY(0); }
 
-/* Content */
-.content {
-  position: absolute;
-  bottom: 80px;
-  width: 100%;
-  text-align: center;
-}
+    .site-header {
+      position: fixed; z-index: 100; top: 0; inset-inline: 0; height: 82px;
+      display: flex; align-items: center; border-bottom: 1px solid transparent;
+      transition: background .3s, border-color .3s, height .3s;
+    }
+    .site-header.scrolled {
+      height: 68px; background: rgba(16, 12, 25, .86); border-color: var(--line);
+      backdrop-filter: blur(18px);
+    }
+    .nav-wrap {
+      width: var(--container); margin: auto; display: flex; align-items: center;
+      justify-content: space-between; gap: 2rem;
+    }
+    .brand { display: inline-flex; align-items: center; gap: .75rem; text-decoration: none; }
+    .brand-emblem { position: relative; width: 60px; height: 60px; flex: 0 0 60px; filter: drop-shadow(0 8px 18px rgba(0,0,0,.32)); }
+    .brand-emblem::after {
+      content: ""; position: absolute; z-index: -1; inset: 14px 6px 2px 12px; border-radius: 50%;
+      background: rgba(239,99,89,.45); filter: blur(12px); opacity: 0; transition: opacity .25s;
+    }
+    .brand:hover .brand-emblem::after, .brand:focus-visible .brand-emblem::after { opacity: 1; }
+    .brand-emblem img { width: 100%; height: 100%; object-fit: contain; transition: transform .25s; }
+    .brand:hover .brand-emblem img, .brand:focus-visible .brand-emblem img { transform: translateY(-2px) rotate(-2deg) scale(1.04); }
+    .brand-copy { font: 800 1rem/1 var(--display); letter-spacing: .12em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 2rem; }
+    .nav-links a {
+      position: relative; font: 700 .83rem/1 var(--body); letter-spacing: .08em;
+      text-decoration: none; text-transform: uppercase;
+    }
+    .nav-links a:not(.nav-cta)::after {
+      position: absolute; content: ""; left: 0; right: 100%; bottom: -.45rem;
+      height: 2px; background: var(--peach); transition: right .2s;
+    }
+    .nav-links a:hover::after, .nav-links a:focus-visible::after { right: 0; }
+    .nav-cta, .button {
+      display: inline-flex; min-height: 48px; align-items: center; justify-content: center;
+      padding: .85rem 1.25rem; border: 1px solid rgba(255,255,255,.5); border-radius: 100px;
+      text-decoration: none; text-transform: uppercase; font: 800 .82rem/1 var(--body);
+      letter-spacing: .08em; transition: transform .2s, background .2s, color .2s;
+    }
+    .nav-cta:hover, .button:hover { transform: translateY(-2px); background: var(--white); color: var(--ink); }
+    .menu-toggle { display: none; border: 0; background: transparent; color: var(--white); padding: .5rem; }
 
-/* Title */
-.title {
-  font-size: 32px;
-  letter-spacing: 4px;
-  margin-bottom: 20px;
-}
+    .hero {
+      position: relative; min-height: 100svh; display: flex; align-items: flex-end;
+      isolation: isolate; overflow: hidden; background: #21152d;
+    }
+    .hero-slides, .hero-shade, .hero-grain { position: absolute; inset: 0; }
+    .hero-slides { z-index: -3; }
+    .hero-slide {
+      position: absolute; inset: 0; height: 100%; object-fit: cover; opacity: 0;
+      transform: scale(1.04); transition: opacity 1.2s ease;
+    }
+    .hero-slide.active { opacity: 1; animation: drift 9s ease-out forwards; }
+    @keyframes drift { from { transform: scale(1.02); } to { transform: scale(1.11); } }
+    .hero-shade {
+      z-index: -2;
+      background:
+        linear-gradient(90deg, rgba(12, 8, 20, .82) 0%, rgba(12, 8, 20, .3) 55%, rgba(12, 8, 20, .35) 100%),
+        linear-gradient(0deg, var(--ink) 0%, transparent 38%, rgba(13, 9, 19, .1) 100%);
+    }
+    .hero-grain {
+      z-index: -1; opacity: .12; pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    }
+    .hero-inner {
+      width: var(--container); margin: 0 auto; padding: 145px 0 62px;
+      display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+      gap: 4rem; align-items: end;
+    }
+    .eyebrow {
+      display: flex; align-items: center; gap: .75rem; margin: 0 0 1rem;
+      color: var(--peach); font: 800 .77rem/1.2 var(--body); letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 34px; height: 2px; background: currentColor; }
+    .hero h1 {
+      max-width: 740px; margin: 0; font: 900 clamp(4.8rem, 11vw, 9.4rem)/.72 var(--display);
+      letter-spacing: -.055em; text-transform: uppercase; text-wrap: balance;
+      text-shadow: 0 8px 40px rgba(0,0,0,.28);
+    }
+    .hero h1 .outline { display: block; color: transparent; -webkit-text-stroke: 2px var(--white); }
+    .hero-intro { max-width: 590px; margin: 1.6rem 0 0; color: rgba(255,250,241,.77); line-height: 1.7; }
+    .hero-intro strong { color: var(--white); }
 
-/* Countdown */
-.countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  font-size: 70px;
-  font-weight: bold;
-}
+    .count-panel {
+      padding: 1.25rem; border: 1px solid var(--line); border-radius: 22px;
+      background: rgba(16, 12, 25, .54); box-shadow: 0 24px 70px rgba(0,0,0,.22);
+      backdrop-filter: blur(16px);
+    }
+    .count-kicker { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+    .count-kicker span { font: 800 .69rem/1 var(--body); letter-spacing: .12em; text-transform: uppercase; }
+    .live-dot { color: var(--lime); }
+    .live-dot::before {
+      content: ""; display: inline-block; width: 7px; height: 7px; margin-right: .45rem;
+      border-radius: 50%; background: currentColor; box-shadow: 0 0 0 5px rgba(201,231,95,.12);
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse { 50% { box-shadow: 0 0 0 9px rgba(201,231,95,0); } }
+    .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: .55rem; }
+    .time-block {
+      min-width: 0; padding: 1rem .25rem .8rem; border-radius: 13px;
+      text-align: center; background: rgba(255,250,241,.08);
+    }
+    .time-number { display: block; font: 700 clamp(2.15rem, 4.5vw, 4.3rem)/.8 var(--display); letter-spacing: -.04em; }
+    .time-label { display: block; margin-top: .7rem; color: rgba(255,250,241,.58); font-size: .56rem; letter-spacing: .12em; text-transform: uppercase; }
+    .count-date {
+      display: flex; justify-content: space-between; gap: 1rem; margin: 1rem .2rem .15rem;
+      color: rgba(255,250,241,.64); font-size: .68rem; line-height: 1.4;
+    }
+    .count-date strong { color: var(--white); text-transform: uppercase; }
+    .hero-scroll {
+      position: absolute; right: 2rem; bottom: 2rem; display: flex; align-items: center; gap: .7rem;
+      font: 700 .62rem/1 var(--body); letter-spacing: .13em; text-transform: uppercase;
+      writing-mode: vertical-rl;
+    }
+    .hero-scroll::after { content: ""; width: 1px; height: 52px; background: linear-gradient(var(--peach), transparent); }
 
-/* Time block */
-.block {
-  text-align: center;
-}
+    .ticker {
+      position: relative; z-index: 4; overflow: hidden; padding: .9rem 0; color: var(--ink);
+      background: linear-gradient(90deg, var(--peach), #f1c56f 50%, var(--pink));
+      border-block: 1px solid rgba(255,255,255,.25); transform: rotate(-1deg) scale(1.015);
+    }
+    .ticker-track { display: flex; width: max-content; animation: ticker 28s linear infinite; }
+    .ticker span { font: 900 1.05rem/1 var(--display); letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+    .ticker span::after { content: "✦"; margin: 0 1.5rem; }
+    @keyframes ticker { to { transform: translateX(-50%); } }
 
-/* Labels */
-.label {
-  font-size: 14px;
-  opacity: 0.7;
-  margin-top: 5px;
-}
+    .section { padding: clamp(5rem, 10vw, 9rem) 0; }
+    .section-inner { width: var(--container); margin: auto; }
+    .section-heading {
+      display: flex; justify-content: space-between; gap: 2rem; align-items: end; margin-bottom: 3rem;
+    }
+    .section-heading h2 { max-width: 780px; margin: 0; font: 900 clamp(3.4rem, 7vw, 6.8rem)/.84 var(--display); letter-spacing: -.04em; text-transform: uppercase; }
+    .section-heading p { max-width: 390px; margin: 0; color: rgba(255,250,241,.65); line-height: 1.7; }
+    .gradient-word { color: var(--peach); }
 
-/* Colon styling */
-.separator {
-  font-size: 60px;
-  opacity: 0.7;
-  margin: 0 10px;
-}
-</style>
+    .facts { background: var(--paper); color: var(--ink); }
+    .facts .eyebrow { color: #9d3a6a; }
+    .facts-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); border-top: 1px solid rgba(16,12,25,.24); }
+    .fact { min-height: 190px; padding: 2rem 1.5rem; border-right: 1px solid rgba(16,12,25,.24); }
+    .fact:last-child { border: 0; }
+    .fact-index { color: #a3486f; font: 700 .7rem/1 var(--body); letter-spacing: .12em; }
+    .fact h3 { margin: 2.5rem 0 .5rem; font: 800 clamp(1.7rem, 3vw, 2.5rem)/.95 var(--display); text-transform: uppercase; }
+    .fact p { margin: 0; color: rgba(16,12,25,.64); font-size: .82rem; line-height: 1.55; }
+    .fact-feature { background: var(--ink); color: var(--white); }
+    .fact-feature p { color: rgba(255,250,241,.65); }
+
+    .story { position: relative; overflow: hidden; }
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .story-card { position: relative; min-height: 620px; overflow: hidden; border-radius: 24px; background: var(--ink-soft); }
+    .story-card img { height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+    .story-card:hover img { transform: scale(1.04); }
+    .story-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(9,6,14,.9), transparent 55%); }
+    .story-copy { position: absolute; z-index: 2; inset: auto 2.2rem 2.2rem; }
+    .story-copy small { color: var(--peach); font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .story-copy h3 { margin: .65rem 0; font: 800 clamp(2.7rem, 5vw, 5rem)/.85 var(--display); text-transform: uppercase; }
+    .story-copy p { max-width: 500px; margin: 0; color: rgba(255,250,241,.68); line-height: 1.6; }
+
+    .feature-strip { padding: 1.25rem 0; background: var(--coral); color: var(--ink); }
+    .feature-strip-inner { width: var(--container); margin: auto; display: flex; justify-content: space-between; gap: 2rem; }
+    .feature-strip strong { font: 900 1.2rem/1 var(--display); letter-spacing: .05em; text-transform: uppercase; }
+
+    .trailers { background: #09070e; }
+    .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .video-card { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: #000; }
+    .video-frame { position: relative; aspect-ratio: 16/9; overflow: hidden; background: #17131d; }
+    .video-frame iframe { width: 100%; height: 100%; border: 0; }
+    .video-poster {
+      position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0;
+      color: var(--white); background: #17131d; cursor: pointer; overflow: hidden;
+    }
+    .video-poster img { height: 100%; object-fit: cover; opacity: .78; transition: transform .6s, opacity .4s; }
+    .video-poster::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(9,7,14,.66), rgba(9,7,14,.08)); }
+    .video-poster:hover img, .video-poster:focus-visible img { transform: scale(1.035); opacity: .9; }
+    .video-play {
+      position: absolute; z-index: 2; left: 50%; top: 50%; display: grid; place-items: center;
+      width: 78px; height: 78px; border: 1px solid rgba(255,255,255,.65); border-radius: 50%;
+      background: rgba(16,12,25,.66); box-shadow: 0 14px 45px rgba(0,0,0,.3);
+      transform: translate(-50%, -50%); backdrop-filter: blur(10px); transition: transform .25s, background .25s;
+    }
+    .video-play::before { content: ""; margin-left: 5px; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 16px solid var(--white); }
+    .video-poster:hover .video-play, .video-poster:focus-visible .video-play { transform: translate(-50%, -50%) scale(1.08); background: var(--coral); }
+    .video-poster-label {
+      position: absolute; z-index: 2; left: 1.25rem; bottom: 1.1rem; font: 800 .68rem/1 var(--body);
+      letter-spacing: .11em; text-transform: uppercase;
+    }
+    .video-meta { display: flex; justify-content: space-between; gap: 1rem; align-items: center; padding: 1.2rem 1.25rem; }
+    .video-meta h3 { margin: 0; font: 800 1.7rem/1 var(--display); text-transform: uppercase; }
+    .video-meta a { color: rgba(255,250,241,.58); font-size: .68rem; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+    .video-meta a:hover, .video-meta a:focus-visible { color: var(--peach); }
+
+    .editions { background: linear-gradient(180deg, #181020 0%, #0d0912 100%); }
+    .edition-grid { display: grid; grid-template-columns: 1.15fr .85fr; grid-template-rows: 330px 330px; gap: 1.25rem; }
+    .edition-card { position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: var(--ink-soft); }
+    .edition-card:first-child { grid-row: 1 / 3; }
+    .edition-card img { height: 100%; object-fit: cover; transition: transform .75s cubic-bezier(.2,.7,.2,1); }
+    .edition-card:hover img { transform: scale(1.035); }
+    .edition-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(8,5,12,.92), transparent 58%); }
+    .edition-copy { position: absolute; z-index: 2; inset: auto 1.7rem 1.55rem; }
+    .edition-copy small { color: var(--peach); font: 800 .65rem/1 var(--body); letter-spacing: .12em; text-transform: uppercase; }
+    .edition-copy h3 { margin: .55rem 0 .35rem; font: 800 clamp(2.2rem, 4vw, 4rem)/.88 var(--display); text-transform: uppercase; }
+    .edition-copy p { max-width: 480px; margin: 0; color: rgba(255,250,241,.66); font-size: .78rem; line-height: 1.55; }
+    .edition-ribbon {
+      position: absolute; z-index: 2; top: 1.1rem; right: 1.1rem; padding: .55rem .7rem; border: 1px solid rgba(255,255,255,.35);
+      border-radius: 100px; background: rgba(16,12,25,.54); backdrop-filter: blur(8px);
+      font: 800 .56rem/1 var(--body); letter-spacing: .1em; text-transform: uppercase;
+    }
+
+    .locations { background: linear-gradient(180deg, var(--paper) 0%, #edc889 100%); color: var(--ink); }
+    .locations .section-heading p { color: rgba(16,12,25,.62); }
+    .location-grid { display: grid; grid-template-columns: 1.1fr .9fr; grid-template-rows: 360px 360px; gap: 1.25rem; }
+    .location-card { position: relative; overflow: hidden; border-radius: 22px; }
+    .location-card:first-child { grid-row: 1 / 3; }
+    .location-card img { height: 100%; object-fit: cover; transition: transform .7s; }
+    .location-card:hover img { transform: scale(1.04); }
+    .location-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(10,7,15,.76), transparent 52%); }
+    .location-tag { position: absolute; z-index: 2; left: 1.5rem; bottom: 1.4rem; color: var(--white); }
+    .location-tag span { font: 800 .66rem/1 var(--body); letter-spacing: .12em; text-transform: uppercase; }
+    .location-tag h3 { margin: .5rem 0 0; font: 800 clamp(2rem, 4vw, 3.5rem)/.9 var(--display); text-transform: uppercase; }
+
+    .gallery { overflow: hidden; }
+    .gallery-intro { max-width: 680px; margin-bottom: 2.5rem; color: rgba(255,250,241,.62); line-height: 1.7; }
+    .media-wall { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
+    .media-tile {
+      position: relative; aspect-ratio: 16/10; min-width: 0; padding: 0; overflow: hidden; border: 0;
+      border-radius: 12px; background: var(--ink-soft); cursor: zoom-in;
+    }
+    .media-tile img { height: 100%; object-fit: cover; filter: saturate(.9); transition: transform .45s, filter .45s; }
+    .media-tile:hover img, .media-tile:focus-visible img { transform: scale(1.055); filter: saturate(1.12); }
+    .zoom-target { cursor: zoom-in; }
+    .zoom-target::before {
+      content: "+"; position: absolute; z-index: 5; top: .8rem; left: .8rem; display: grid; place-items: center;
+      width: 34px; height: 34px; border: 1px solid rgba(255,255,255,.48); border-radius: 50%;
+      color: var(--white); background: rgba(12,8,18,.6); font: 500 1.25rem/1 var(--body);
+      opacity: 0; transform: scale(.85); backdrop-filter: blur(8px); transition: opacity .2s, transform .2s, background .2s;
+    }
+    .zoom-target:hover::before, .zoom-target:focus-visible::before { opacity: 1; transform: scale(1); background: var(--coral); }
+    .zoom-target:focus-visible { outline: 2px solid var(--peach); outline-offset: 3px; }
+    .archive {
+      margin-top: 1.25rem; border: 1px solid var(--line); border-radius: 18px; overflow: hidden;
+      background: rgba(255,255,255,.025);
+    }
+    .archive summary {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding: 1.3rem 1.5rem; cursor: pointer; list-style: none;
+      font: 800 1rem/1 var(--body); letter-spacing: .08em; text-transform: uppercase;
+    }
+    .archive summary::-webkit-details-marker { display: none; }
+    .archive summary::after { content: "+"; color: var(--peach); font-size: 1.5rem; }
+    .archive[open] summary::after { content: "−"; }
+    .archive-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
+    .archive-grid figure { position: relative; aspect-ratio: 16/9; margin: 0; overflow: hidden; background: var(--ink); }
+    .archive-grid img { height: 100%; object-fit: cover; transition: transform .45s; }
+    .archive-grid figure:hover img { transform: scale(1.04); }
+    .archive-grid figcaption {
+      position: absolute; inset: auto .65rem .55rem; padding: .38rem .5rem; border-radius: 5px;
+      color: var(--white); background: rgba(10,7,15,.72); font-size: .57rem; line-height: 1.25;
+      letter-spacing: .06em; text-transform: uppercase; backdrop-filter: blur(6px);
+    }
+
+    .faq { background: var(--paper); color: var(--ink); }
+    .faq-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 5rem; align-items: start; }
+    .faq h2 { position: sticky; top: 110px; margin: 0; font: 900 clamp(3.8rem, 7vw, 7rem)/.8 var(--display); text-transform: uppercase; }
+    .faq-item { border-top: 1px solid rgba(16,12,25,.22); }
+    .faq-item:last-child { border-bottom: 1px solid rgba(16,12,25,.22); }
+    .faq-item summary {
+      display: flex; justify-content: space-between; gap: 2rem; padding: 1.5rem 0; cursor: pointer;
+      list-style: none; font: 800 clamp(1.35rem, 2.5vw, 2rem)/1 var(--display); text-transform: uppercase;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: #a13f6e; }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-item p { max-width: 720px; margin: -.2rem 0 1.6rem; color: rgba(16,12,25,.65); line-height: 1.7; }
+
+    .site-footer { padding: 5rem 0 2rem; background: #09070e; }
+    .footer-top { width: var(--container); margin: auto; display: grid; grid-template-columns: 1.4fr .6fr; gap: 4rem; align-items: end; }
+    .footer-title { margin: 0; font: 900 clamp(4.8rem, 12vw, 11rem)/.68 var(--display); letter-spacing: -.05em; text-transform: uppercase; }
+    .footer-title span { color: var(--peach); }
+    .footer-links { display: grid; gap: .8rem; justify-items: end; }
+    .footer-links a { font: 700 .74rem/1 var(--body); letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+    .footer-links a:hover { color: var(--peach); }
+    .footer-bottom {
+      width: var(--container); margin: 4rem auto 0; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      display: flex; justify-content: space-between; gap: 2rem; color: rgba(255,250,241,.45); font-size: .69rem; line-height: 1.6;
+    }
+    .sound-toggle {
+      position: fixed; z-index: 90; left: 1.25rem; bottom: 1.25rem; display: flex; align-items: center; gap: .55rem;
+      padding: .72rem .9rem; border: 1px solid var(--line); border-radius: 100px; color: var(--white);
+      background: rgba(16,12,25,.7); backdrop-filter: blur(12px); cursor: pointer;
+      font-size: .65rem; letter-spacing: .1em; text-transform: uppercase;
+    }
+    .sound-bars { display: flex; align-items: center; gap: 2px; height: 12px; }
+    .sound-bars i { width: 2px; height: 3px; background: var(--peach); }
+    .sound-toggle.playing .sound-bars i { animation: bar .8s ease-in-out infinite alternate; }
+    .sound-toggle.playing .sound-bars i:nth-child(2) { animation-delay: -.3s; }
+    .sound-toggle.playing .sound-bars i:nth-child(3) { animation-delay: -.55s; }
+    @keyframes bar { to { height: 12px; } }
+
+    .lightbox {
+      position: fixed; z-index: 200; inset: 0; display: none; overflow: hidden;
+      background: rgba(7,5,11,.95); backdrop-filter: blur(14px);
+    }
+    .lightbox.open { display: block; }
+    .lightbox-stage { position: absolute; inset: 0; display: grid; place-items: center; padding: 5rem 2rem; overflow: hidden; touch-action: none; }
+    .lightbox img {
+      max-width: min(1400px, 92vw); max-height: 78vh; width: auto; border-radius: 10px;
+      box-shadow: 0 30px 100px #000; transform: translate3d(0,0,0) scale(1); transform-origin: center;
+      transition: transform .18s ease; user-select: none; -webkit-user-drag: none; cursor: zoom-in;
+    }
+    .lightbox img.is-zoomed { cursor: grab; }
+    .lightbox.dragging img { cursor: grabbing; transition: none; }
+    .lightbox-close {
+      position: absolute; z-index: 5; top: 1.25rem; right: 1.25rem; display: grid; place-items: center;
+      width: 44px; height: 44px; padding: 0; border: 1px solid rgba(255,255,255,.45); border-radius: 50%;
+      color: var(--white); background: rgba(16,12,25,.72); font-size: 1.7rem; cursor: pointer; backdrop-filter: blur(8px);
+    }
+    .lightbox-toolbar {
+      position: absolute; z-index: 5; left: 50%; bottom: 1.25rem; display: flex; align-items: center; gap: .45rem;
+      padding: .45rem; border: 1px solid rgba(255,255,255,.24); border-radius: 100px;
+      background: rgba(16,12,25,.78); transform: translateX(-50%); backdrop-filter: blur(10px);
+    }
+    .lightbox-toolbar button {
+      display: grid; place-items: center; width: 38px; height: 38px; padding: 0; border: 0; border-radius: 50%;
+      color: var(--white); background: rgba(255,255,255,.08); font-size: 1.2rem; cursor: pointer;
+    }
+    .lightbox-toolbar button:hover, .lightbox-toolbar button:focus-visible { color: var(--ink); background: var(--peach); }
+    .lightbox-toolbar button:disabled { opacity: .35; cursor: not-allowed; }
+    .lightbox-toolbar output { min-width: 56px; text-align: center; font: 700 .66rem/1 var(--body); letter-spacing: .08em; }
+    .lightbox-help { position: absolute; z-index: 4; left: 1.25rem; bottom: 1.6rem; color: rgba(255,250,241,.52); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; }
+
+    @media (max-width: 960px) {
+      :root { --container: min(100% - 32px, 760px); }
+      .site-header.scrolled { backdrop-filter: none; }
+      .nav-links {
+        position: fixed; top: 0; left: 0; z-index: 1; width: 100vw; height: 100dvh;
+        display: flex; flex-direction: column; justify-content: center;
+        background: rgba(16,12,25,.98); opacity: 0; visibility: hidden; transition: opacity .25s, visibility .25s;
+      }
+      .nav-links.open { opacity: 1; visibility: visible; }
+      .nav-links a { font-size: 1.35rem; }
+      .menu-toggle { display: block; z-index: 2; }
+      .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; padding-bottom: 48px; }
+      .hero h1 { max-width: 650px; }
+      .count-panel { max-width: 650px; }
+      .hero-scroll { display: none; }
+      .section-heading { align-items: start; flex-direction: column; }
+      .facts-grid { grid-template-columns: 1fr 1fr; }
+      .fact { border-bottom: 1px solid rgba(16,12,25,.24); }
+      .story-card { min-height: 500px; }
+      .video-grid { grid-template-columns: 1fr; }
+      .edition-grid { grid-template-rows: 300px 300px; }
+      .location-grid { grid-template-rows: 310px 310px; }
+      .media-wall { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .archive-grid { grid-template-columns: repeat(3, 1fr); }
+      .faq-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .faq h2 { position: static; }
+    }
+
+    @media (max-width: 640px) {
+      :root { --container: calc(100% - 24px); }
+      .site-header { height: 70px; }
+      .brand-copy { display: none; }
+      .brand-emblem { width: 52px; height: 52px; flex-basis: 52px; }
+      .hero { min-height: auto; }
+      .hero-inner { min-height: 100svh; padding: 125px 0 42px; }
+      .hero h1 { font-size: clamp(4.4rem, 22vw, 6.5rem); }
+      .hero-intro { font-size: .87rem; }
+      .count-panel { padding: .8rem; border-radius: 16px; }
+      .countdown { gap: .35rem; }
+      .time-block { padding: .8rem .1rem .65rem; }
+      .time-number { font-size: clamp(2rem, 12vw, 3.4rem); }
+      .time-label { font-size: .46rem; letter-spacing: .07em; }
+      .count-date { flex-direction: column; gap: .25rem; }
+      .section { padding: 4.5rem 0; }
+      .section-heading { margin-bottom: 2rem; }
+      .section-heading h2 { font-size: clamp(3rem, 16vw, 4.8rem); }
+      .facts-grid { grid-template-columns: 1fr; }
+      .fact { min-height: auto; border-right: 0; }
+      .fact h3 { margin-top: 1.8rem; }
+      .story-grid { grid-template-columns: 1fr; }
+      .story-card { min-height: 470px; }
+      .story-copy { inset: auto 1.25rem 1.3rem; }
+      .feature-strip-inner { overflow: auto; }
+      .feature-strip strong { white-space: nowrap; }
+      .location-grid { display: grid; grid-template-columns: 1fr; grid-template-rows: repeat(3, 360px); }
+      .location-card:first-child { grid-row: auto; }
+      .edition-grid { display: grid; grid-template-columns: 1fr; grid-template-rows: repeat(3, 390px); }
+      .edition-card:first-child { grid-row: auto; }
+      .media-wall { grid-template-columns: 1fr 1fr; }
+      .media-tile:last-child:nth-child(odd) { grid-column: 1 / -1; aspect-ratio: 16/9; }
+      .archive-grid { grid-template-columns: 1fr 1fr; }
+      .lightbox-stage { padding: 4.5rem .75rem 5.5rem; }
+      .lightbox img { max-width: 96vw; max-height: 74vh; }
+      .lightbox-help { display: none; }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-links { justify-items: start; }
+      .footer-bottom { flex-direction: column; }
+      .sound-toggle { left: auto; right: 1rem; bottom: 1rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<!-- Background Images -->
-<img class="bg active" src="images/1.avif">
-<img class="bg" src="images/2.avif">
-<img class="bg" src="images/3.avif">
-<img class="bg" src="images/4.avif">
-<img class="bg" src="images/5.avif">
-<img class="bg" src="images/6.avif">
-<img class="bg" src="images/7.avif">
-<img class="bg" src="images/8.avif">
-<img class="bg" src="images/9.avif">
-<img class="bg" src="images/10.avif">
-<img class="bg" src="images/11.avif">
-<img class="bg" src="images/12.avif">
-<img class="bg" src="images/13.avif">
-<img class="bg" src="images/14.avif">
-<img class="bg" src="images/15.avif">
+  <header class="site-header" id="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="GTA 6 Countdown home">
+        <span class="brand-emblem" aria-hidden="true"><img src="images/gta6-countdown-icon.svg" width="96" height="96" alt=""></span>
+        <span class="brand-copy">GTA 6 Countdown</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary navigation">
+        <a href="#release">Release</a>
+        <a href="#trailers">Trailers</a>
+        <a href="#leonida">Leonida</a>
+        <a href="#editions">Editions</a>
+        <a href="#gallery">Gallery</a>
+        <a class="nav-cta" href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer">Official site ↗</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">☰</button>
+    </div>
+  </header>
 
-<div class="overlay"></div>
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-slides" aria-hidden="true">
+        <img class="hero-slide active" src="images/hero-vintage-vice-city.jpg" width="1920" height="1080" alt="" fetchpriority="high">
+        <img class="hero-slide" src="images/hero-ultimate-edition.jpg" width="1920" height="1080" alt="" loading="lazy">
+        <img class="hero-slide" src="images/hero-grotti-cheetah.jpg" width="1920" height="1080" alt="" loading="lazy">
+        <img class="hero-slide" src="images/9.avif" width="1440" height="790" alt="" loading="lazy">
+        <img class="hero-slide" src="images/10.avif" width="1920" height="1080" alt="" loading="lazy">
+        <img class="hero-slide" src="images/1.avif" width="1920" height="1080" alt="" loading="lazy">
+        <img class="hero-slide" src="images/6.avif" width="1920" height="1080" alt="" loading="lazy">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
 
-<div class="content">
-  <div class="title">GRAND THEFT AUTO VI LAUNCHES IN</div>
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">The road to Leonida starts here</p>
+          <h1 id="hero-title">GTA 6 <span class="outline">Countdown</span></h1>
+          <p class="hero-intro">Count every second until <strong>Grand Theft Auto VI</strong> arrives. The next chapter heads to Vice City and the wider state of Leonida on November 19, 2026.</p>
+        </div>
 
-  <div class="countdown">
-    <div class="block">
-      <div id="days">0</div>
-      <div class="label">DAYS</div>
+        <div class="count-panel" role="timer" aria-label="Countdown to GTA 6 release">
+          <div class="count-kicker">
+            <span>Launching in</span>
+            <span class="live-dot">Live</span>
+          </div>
+          <div class="countdown" aria-live="off">
+            <div class="time-block"><span class="time-number" id="days">000</span><span class="time-label">Days</span></div>
+            <div class="time-block"><span class="time-number" id="hours">00</span><span class="time-label">Hours</span></div>
+            <div class="time-block"><span class="time-number" id="minutes">00</span><span class="time-label">Minutes</span></div>
+            <div class="time-block"><span class="time-number" id="seconds">00</span><span class="time-label">Seconds</span></div>
+          </div>
+          <div class="count-date">
+            <strong>19 · 11 · 2026</strong>
+            <span>Midnight in your local timezone</span>
+          </div>
+        </div>
+      </div>
+      <span class="hero-scroll" aria-hidden="true">Scroll to enter</span>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Vice City awaits</span><span>November 19, 2026</span><span>PlayStation 5</span><span>Xbox Series X|S</span><span>Welcome to Leonida</span>
+        <span>Vice City awaits</span><span>November 19, 2026</span><span>PlayStation 5</span><span>Xbox Series X|S</span><span>Welcome to Leonida</span>
+      </div>
     </div>
 
-    <div class="separator">:</div>
+    <section class="section facts" id="release" aria-labelledby="release-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Confirmed release details</p>
+        <div class="section-heading">
+          <h2 id="release-heading">The date is <span class="gradient-word">locked in.</span></h2>
+          <p>The countdown uses November 19, 2026 at midnight in your device’s timezone. Official details can change, so Rockstar Games remains the definitive source.</p>
+        </div>
+        <div class="facts-grid">
+          <article class="fact fact-feature">
+            <span class="fact-index">01 / Release</span>
+            <h3>November 19, 2026</h3>
+            <p>The currently announced worldwide launch date.</p>
+          </article>
+          <article class="fact">
+            <span class="fact-index">02 / Console</span>
+            <h3>PlayStation 5</h3>
+            <p>Confirmed as an announced launch platform.</p>
+          </article>
+          <article class="fact">
+            <span class="fact-index">03 / Console</span>
+            <h3>Xbox Series X|S</h3>
+            <p>Confirmed as an announced launch platform.</p>
+          </article>
+          <article class="fact">
+            <span class="fact-index">04 / Setting</span>
+            <h3>Leonida</h3>
+            <p>Vice City, the Keys, wetlands and far beyond.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <div class="block">
-      <div id="hours">00</div>
-      <div class="label">HOURS</div>
+    <section class="section story" aria-labelledby="story-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Jason &amp; Lucia</p>
+        <div class="section-heading">
+          <h2 id="story-heading">One score.<br>Two lives.</h2>
+          <p>When an easy score goes wrong, Jason and Lucia find themselves on the darkest side of the sunniest place in America—and forced to rely on each other.</p>
+        </div>
+        <div class="story-grid">
+          <article class="story-card">
+            <img src="images/1.avif" width="1920" height="1080" loading="lazy" alt="Jason Duval sitting in a car in Grand Theft Auto VI">
+            <div class="story-copy"><small>Meet Jason</small><h3>Keep moving.</h3><p>Jason wants an easy life, but Leonida has other plans.</p></div>
+          </article>
+          <article class="story-card">
+            <img src="images/2.avif" width="1920" height="1080" loading="lazy" alt="Lucia Caminos training in a boxing gym in Grand Theft Auto VI">
+            <div class="story-copy"><small>Meet Lucia</small><h3>Make your luck.</h3><p>Lucia has learned that only smart moves will get her out.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="feature-strip" aria-label="GTA 6 key facts">
+      <div class="feature-strip-inner"><strong>Two protagonists</strong><strong>One state</strong><strong>Endless trouble</strong><strong>Vice City, USA</strong></div>
     </div>
 
-    <div class="separator">:</div>
+    <section class="section trailers" id="trailers" aria-labelledby="trailers-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Watch the official trailers</p>
+        <div class="section-heading">
+          <h2 id="trailers-heading">Welcome back<br>to <span class="gradient-word">Vice City.</span></h2>
+          <p>Official Grand Theft Auto VI trailers from Rockstar Games. Select a poster to load the player, or use the direct YouTube link if your browser blocks embeds.</p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-frame" data-video-id="VQRLujxTm3c" data-video-title="Grand Theft Auto VI Trailer 2 by Rockstar Games">
+              <button class="video-poster" type="button" aria-label="Play Grand Theft Auto VI Trailer 2">
+                <img src="images/9.avif" width="1440" height="790" loading="lazy" alt="Jason and Lucia beneath the neon lights of Vice City">
+                <span class="video-play" aria-hidden="true"></span>
+                <span class="video-poster-label">Play official trailer</span>
+              </button>
+            </div>
+            <div class="video-meta"><h3>Trailer 2</h3><a href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div>
+          </article>
+          <article class="video-card">
+            <div class="video-frame" data-video-id="QdBZY2fkU-0" data-video-title="Grand Theft Auto VI Trailer 1 by Rockstar Games">
+              <button class="video-poster" type="button" aria-label="Play Grand Theft Auto VI Trailer 1">
+                <img src="images/10.avif" width="1920" height="1080" loading="lazy" alt="A private jet passing over the Vice City sign at sunset">
+                <span class="video-play" aria-hidden="true"></span>
+                <span class="video-poster-label">Play official trailer</span>
+              </button>
+            </div>
+            <div class="video-meta"><h3>Trailer 1</h3><a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <div class="block">
-      <div id="minutes">00</div>
-      <div class="label">MINUTES</div>
+    <section class="section locations" id="leonida" aria-labelledby="leonida-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Explore the state</p>
+        <div class="section-heading">
+          <h2 id="leonida-heading">Only in<br>Leonida.</h2>
+          <p>From neon-soaked avenues to glittering coastlines and untamed wetlands, Leonida is a sunlit paradise with a dangerous edge.</p>
+        </div>
+        <div class="location-grid">
+          <article class="location-card">
+            <img src="images/10.avif" width="1920" height="1080" loading="lazy" alt="A jet flying above the giant Vice City sign at sunset in GTA 6">
+            <div class="location-tag"><span>Neon capital</span><h3>Vice City</h3></div>
+          </article>
+          <article class="location-card">
+            <img src="images/11.avif" width="1920" height="1280" loading="lazy" alt="Aerial view of the turquoise coastline and islands of Leonida in GTA 6">
+            <div class="location-tag"><span>Island chain</span><h3>Leonida Keys</h3></div>
+          </article>
+          <article class="location-card">
+            <img src="images/12.avif" width="1920" height="1280" loading="lazy" alt="Sunset over Leonida wetlands with an airboat in GTA 6">
+            <div class="location-tag"><span>Wild country</span><h3>Grassrivers</h3></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section editions" id="editions" aria-labelledby="editions-heading">
+      <div class="section-inner">
+        <p class="eyebrow">New artwork collection</p>
+        <div class="section-heading">
+          <h2 id="editions-heading">The deluxe side<br>of <span class="gradient-word">Vice City.</span></h2>
+          <p>The newly added 4K artwork is now part of the main experience. Explore character styles, classic vehicles and the city’s custom car culture, with the complete sets available in the archive below.</p>
+        </div>
+        <div class="edition-grid">
+          <article class="edition-card">
+            <img src="images/ULTIMATE_EDITION_01.jpg" width="3840" height="2160" loading="lazy" alt="Lucia and Jason in Ultimate Edition outfits against a golden Vice City sunset">
+            <span class="edition-ribbon">Featured collection</span>
+            <div class="edition-copy"><small>Ultimate Edition</small><h3>Live the high life.</h3><p>An exclusive collection threaded across Jason and Lucia’s story, from signature looks to vehicles, weapons and more.</p></div>
+          </article>
+          <article class="edition-card">
+            <img src="images/VINTAGE_VICE_CITY_PACK_01.jpg" width="3840" height="2160" loading="lazy" alt="Jason and Lucia in vintage outfits outside an Ocean View hotel">
+            <span class="edition-ribbon">Neon nostalgia</span>
+            <div class="edition-copy"><small>Vintage Vice City Pack</small><h3>When neon burned brightest.</h3></div>
+          </article>
+          <article class="edition-card">
+            <img src="images/ULTIMATE_EDITION_GROTTI_CHEETAH_01.jpg" width="3840" height="2160" loading="lazy" alt="White Grotti Cheetah sports car outside a Vice City residence at sunset">
+            <span class="edition-ribbon">Vehicle collection</span>
+            <div class="edition-copy"><small>Grotti Cheetah</small><h3>Made for Ocean Drive.</h3></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Screenshots &amp; artwork</p>
+        <div class="section-heading">
+          <h2 id="gallery-heading">Postcards from<br><span class="gradient-word">paradise.</span></h2>
+        </div>
+        <p class="gallery-intro">Every image is written directly into this page with descriptive alternative text, dimensions and native lazy-loading. That makes the media crawlable while preventing the full 4K archive from blocking the first view.</p>
+
+        <div class="media-wall">
+          <button class="media-tile" type="button" aria-label="Open image: Jason in his car"><img src="images/1.avif" width="1920" height="1080" loading="lazy" alt="Jason in a car beneath Leonida palm trees"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Lucia training"><img src="images/2.avif" width="1920" height="1080" loading="lazy" alt="Lucia training at a boxing gym"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Leonida character"><img src="images/3.avif" width="1920" height="1080" loading="lazy" alt="A colorful Leonida resident at an outdoor attraction"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Vice City nightlife"><img src="images/4.avif" width="1920" height="1080" loading="lazy" alt="A Vice City nightclub owner under purple light"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Poolside nightlife"><img src="images/5.avif" width="1920" height="1080" loading="lazy" alt="Poolside nightlife under neon lights in Vice City"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Street party"><img src="images/6.avif" width="1920" height="1080" loading="lazy" alt="A lively street party at night in Vice City"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Getaway driver"><img src="images/7.avif" width="1920" height="1080" loading="lazy" alt="A getaway driver holding a pistol in a luxury car"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Gas station scene"><img src="images/8.avif" width="1920" height="1080" loading="lazy" alt="A tense conversation at a Leonida gas station"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Jason and Lucia"><img src="images/9.avif" width="1440" height="790" loading="lazy" alt="Jason and Lucia embracing beneath Vice City neon"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Vice City sign"><img src="images/10.avif" width="1920" height="1080" loading="lazy" alt="A private jet above the monumental Vice City sign"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Leonida coast"><img src="images/11.avif" width="1920" height="1280" loading="lazy" alt="Turquoise waters surrounding the Leonida coast"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Leonida wetlands"><img src="images/12.avif" width="1920" height="1280" loading="lazy" alt="Golden sunset over the Leonida wetlands"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Starlet Motel"><img src="images/13.avif" width="1920" height="1080" loading="lazy" alt="The vintage Starlet Motel sign at night"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Port Gellhorn"><img src="images/14.avif" width="1920" height="1280" loading="lazy" alt="Industrial Port Gellhorn beneath an orange sky"></button>
+          <button class="media-tile" type="button" aria-label="Open image: Mount Kalaga"><img src="images/15.avif" width="1920" height="1080" loading="lazy" alt="A winding road through the rocky hills of Mount Kalaga"></button>
+        </div>
+
+        <details class="archive">
+          <summary>Explore the complete Ultimate Edition artwork archive <span>51 images</span></summary>
+          <div class="archive-grid">
+            <figure><img src="images/ULTIMATE_EDITION_01.jpg" width="3840" height="2160" loading="lazy" alt="GTA VI Ultimate Edition official artwork one"><figcaption>Ultimate Edition · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_02.jpg" width="3840" height="2160" loading="lazy" alt="GTA VI Ultimate Edition official artwork two"><figcaption>Ultimate Edition · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_ELECTRIC_FANG_01.jpg" width="3840" height="2160" loading="lazy" alt="Electric Fang item in GTA VI Ultimate Edition"><figcaption>Electric Fang · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_ELECTRIC_FANG_02.jpg" width="3840" height="2160" loading="lazy" alt="Electric Fang detail in GTA VI Ultimate Edition"><figcaption>Electric Fang · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_ELECTRIC_FANG_03.jpg" width="3840" height="2160" loading="lazy" alt="Electric Fang vehicle view in GTA VI Ultimate Edition"><figcaption>Electric Fang · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_ELECTRIC_FANG_04.jpg" width="3840" height="2160" loading="lazy" alt="Electric Fang showcase in GTA VI Ultimate Edition"><figcaption>Electric Fang · 04</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_GOODTIME_GEAR_01.jpg" width="3840" height="2160" loading="lazy" alt="Goodtime Gear in GTA VI Ultimate Edition"><figcaption>Goodtime Gear</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_GROTTI_CHEETAH_01.jpg" width="3840" height="2160" loading="lazy" alt="Grotti Cheetah Classic car in GTA VI"><figcaption>Grotti Cheetah · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_GROTTI_CHEETAH_02.jpg" width="3840" height="2160" loading="lazy" alt="Grotti Cheetah side view in GTA VI"><figcaption>Grotti Cheetah · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_GROTTI_CHEETAH_03.jpg" width="3840" height="2160" loading="lazy" alt="Grotti Cheetah driving in GTA VI"><figcaption>Grotti Cheetah · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_GROTTI_CHEETAH_04.jpg" width="3840" height="2160" loading="lazy" alt="Grotti Cheetah interior in GTA VI"><figcaption>Grotti Cheetah · 04</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_01.jpg" width="3840" height="2160" loading="lazy" alt="Hawk and Little Morgan revolvers in GTA VI"><figcaption>Morgan Revolvers · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_HAWK_AND_LITTLE_MORGAN_REVOLVERS_02.jpg" width="3840" height="2160" loading="lazy" alt="Hawk and Little Morgan revolver detail"><figcaption>Morgan Revolvers · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_ONE_EYED_WILLIE_01.jpg" width="3840" height="2160" loading="lazy" alt="One Eyed Willie item in GTA VI"><figcaption>One Eyed Willie · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_ONE_EYED_WILLIE_02.jpg" width="3840" height="2160" loading="lazy" alt="One Eyed Willie detail in GTA VI"><figcaption>One Eyed Willie · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_ONE_EYED_WILLIE_03.jpg" width="3840" height="2160" loading="lazy" alt="One Eyed Willie showcase in GTA VI"><figcaption>One Eyed Willie · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_PTT_STORE_01.jpg" width="3840" height="2160" loading="lazy" alt="PTT Store item in GTA VI Ultimate Edition"><figcaption>PTT Store</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_RIDEOUT_CUSTOMS_01.jpg" width="3840" height="2160" loading="lazy" alt="Rideout Customs garage in GTA VI"><figcaption>Rideout Customs · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_RIDEOUT_CUSTOMS_02.jpg" width="3840" height="2160" loading="lazy" alt="Rideout Customs vehicle detail in GTA VI"><figcaption>Rideout Customs · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_RIDEOUT_CUSTOMS_03.jpg" width="3840" height="2160" loading="lazy" alt="Rideout Customs showcase in GTA VI"><figcaption>Rideout Customs · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_01.jpg" width="3840" height="2160" loading="lazy" alt="Safehouse vehicle in GTA VI"><figcaption>Safehouse Vehicles · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_02.jpg" width="3840" height="2160" loading="lazy" alt="Second safehouse vehicle in GTA VI"><figcaption>Safehouse Vehicles · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SAFEHOUSE_VEHICLES_03.jpg" width="3840" height="2160" loading="lazy" alt="Third safehouse vehicle in GTA VI"><figcaption>Safehouse Vehicles · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SARAS_SALON_01.jpg" width="3840" height="2160" loading="lazy" alt="Sara's Salon style in GTA VI"><figcaption>Sara's Salon · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SARAS_SALON_02.jpg" width="3840" height="2160" loading="lazy" alt="Sara's Salon style detail in GTA VI"><figcaption>Sara's Salon · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SARAS_SALON_03.jpg" width="3840" height="2160" loading="lazy" alt="Sara's Salon showcase in GTA VI"><figcaption>Sara's Salon · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SQUALO_01.jpg" width="3840" height="2160" loading="lazy" alt="Squalo speedboat in GTA VI"><figcaption>Squalo · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SQUALO_02.jpg" width="3840" height="2160" loading="lazy" alt="Squalo speedboat side view in GTA VI"><figcaption>Squalo · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SQUALO_03.jpg" width="3840" height="2160" loading="lazy" alt="Squalo speedboat on Leonida water"><figcaption>Squalo · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_SQUALO_04.jpg" width="3840" height="2160" loading="lazy" alt="Squalo speedboat detail in GTA VI"><figcaption>Squalo · 04</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_STOCK_305_01.jpg" width="3840" height="2160" loading="lazy" alt="Stock 305 venue in GTA VI"><figcaption>Stock 305 · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_STOCK_305_02.jpg" width="3840" height="2160" loading="lazy" alt="Stock 305 equipment in GTA VI"><figcaption>Stock 305 · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_STOCK_305_03.jpg" width="3840" height="2160" loading="lazy" alt="Stock 305 showcase in GTA VI"><figcaption>Stock 305 · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_STOCK_305_04.jpg" width="3840" height="2160" loading="lazy" alt="Stock 305 detail in GTA VI"><figcaption>Stock 305 · 04</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VAPID_BUGGY_01.jpg" width="3840" height="2160" loading="lazy" alt="Vapid Buggy in GTA VI"><figcaption>Vapid Buggy · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VAPID_BUGGY_02.jpg" width="3840" height="2160" loading="lazy" alt="Vapid Buggy side view in GTA VI"><figcaption>Vapid Buggy · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VAPID_BUGGY_03.jpg" width="3840" height="2160" loading="lazy" alt="Vapid Buggy driving in GTA VI"><figcaption>Vapid Buggy · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VAPID_BUGGY_04.jpg" width="3840" height="2160" loading="lazy" alt="Vapid Buggy detail in GTA VI"><figcaption>Vapid Buggy · 04</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VAPID_GANADO_RETRO_BUILD_01.jpg" width="3840" height="2160" loading="lazy" alt="Vapid Ganado retro build in GTA VI"><figcaption>Ganado Retro Build</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VICE_CITY_STYLE_01.jpg" width="3840" height="2160" loading="lazy" alt="Vice City Style outfit one"><figcaption>Vice City Style · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VICE_CITY_STYLE_02.jpg" width="3840" height="2160" loading="lazy" alt="Vice City Style outfit two"><figcaption>Vice City Style · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VICE_CITY_STYLE_03.jpg" width="3840" height="2160" loading="lazy" alt="Vice City Style outfit three"><figcaption>Vice City Style · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VICE_CITY_STYLE_04.jpg" width="3840" height="2160" loading="lazy" alt="Vice City Style outfit four"><figcaption>Vice City Style · 04</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_VICE_CITY_STYLE_05.jpg" width="3840" height="2160" loading="lazy" alt="Vice City Style outfit five"><figcaption>Vice City Style · 05</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_WEAPON_VARIANTS_01.jpg" width="3840" height="2160" loading="lazy" alt="Weapon variants in GTA VI Ultimate Edition"><figcaption>Weapon Variants</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_01.jpg" width="3840" height="2160" loading="lazy" alt="Wyman Car Collection vehicle one"><figcaption>Wyman Collection · 01</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_02.jpg" width="3840" height="2160" loading="lazy" alt="Wyman Car Collection vehicle two"><figcaption>Wyman Collection · 02</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_03.jpg" width="3840" height="2160" loading="lazy" alt="Wyman Car Collection vehicle three"><figcaption>Wyman Collection · 03</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_04.jpg" width="3840" height="2160" loading="lazy" alt="Wyman Car Collection vehicle four"><figcaption>Wyman Collection · 04</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_05.jpg" width="3840" height="2160" loading="lazy" alt="Wyman Car Collection vehicle five"><figcaption>Wyman Collection · 05</figcaption></figure>
+            <figure><img src="images/ULTIMATE_EDITION_WYMAN_CAR_COLLECTION_06.jpg" width="3840" height="2160" loading="lazy" alt="Wyman Car Collection vehicle six"><figcaption>Wyman Collection · 06</figcaption></figure>
+          </div>
+        </details>
+
+        <details class="archive">
+          <summary>Explore the complete Vintage Vice City Pack archive <span>12 images</span></summary>
+          <div class="archive-grid">
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_01.jpg" width="3840" height="2160" loading="lazy" alt="Vintage Vice City Pack artwork one"><figcaption>Vintage Vice City · 01</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_02.jpg" width="3840" height="2160" loading="lazy" alt="Vintage Vice City Pack artwork two"><figcaption>Vintage Vice City · 02</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_01.jpg" width="3840" height="2160" loading="lazy" alt="Vintage Vice City exclusive look one"><figcaption>Exclusive Looks · 01</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_02.jpg" width="3840" height="2160" loading="lazy" alt="Vintage Vice City exclusive look two"><figcaption>Exclusive Looks · 02</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_03.jpg" width="3840" height="2160" loading="lazy" alt="Vintage Vice City exclusive look three"><figcaption>Exclusive Looks · 03</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_04.jpg" width="3840" height="2160" loading="lazy" alt="Vintage Vice City exclusive look four"><figcaption>Exclusive Looks · 04</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_EXCLUSIVE_LOOKS_05.jpg" width="3840" height="2160" loading="lazy" alt="Vintage Vice City exclusive look five"><figcaption>Exclusive Looks · 05</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_01.jpg" width="3840" height="2160" loading="lazy" alt="Vapid Stanier classic car view one"><figcaption>Vapid Stanier · 01</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_02.jpg" width="3840" height="2160" loading="lazy" alt="Vapid Stanier classic car view two"><figcaption>Vapid Stanier · 02</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_03.jpg" width="3840" height="2160" loading="lazy" alt="Vapid Stanier classic car view three"><figcaption>Vapid Stanier · 03</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_PACK_VAPID_STANIER_04.jpg" width="3840" height="2160" loading="lazy" alt="Vapid Stanier classic car view four"><figcaption>Vapid Stanier · 04</figcaption></figure>
+            <figure><img src="images/VINTAGE_VICE_CITY_WEAPON_PATTERN_01.jpg" width="3840" height="2160" loading="lazy" alt="Vintage Vice City weapon pattern"><figcaption>Weapon Pattern</figcaption></figure>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq" aria-labelledby="faq-heading">
+      <div class="section-inner faq-grid">
+        <div><p class="eyebrow">Need to know</p><h2 id="faq-heading">GTA 6<br>FAQ.</h2></div>
+        <div>
+          <details class="faq-item" open><summary>When is GTA 6 coming out?</summary><p>Rockstar Games currently lists Grand Theft Auto VI for November 19, 2026. This countdown runs to midnight on that date in your local timezone.</p></details>
+          <details class="faq-item"><summary>Which platforms are confirmed?</summary><p>PlayStation 5 and Xbox Series X|S are the announced launch platforms. Rockstar Games has not announced a PC release date on the official GTA VI page.</p></details>
+          <details class="faq-item"><summary>Where is GTA 6 set?</summary><p>The game takes place across Leonida, a fictional state inspired by Florida. Confirmed areas include Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga.</p></details>
+          <details class="faq-item"><summary>Who are the main characters?</summary><p>Jason Duval and Lucia Caminos are the central protagonists. After an easy score goes wrong, the pair become caught in a criminal conspiracy stretching across Leonida.</p></details>
+          <details class="faq-item"><summary>Is this an official Rockstar website?</summary><p>No. GTA 6 Countdown is an independent fan-made countdown and is not affiliated with, endorsed by or sponsored by Rockstar Games or Take-Two Interactive.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <p class="footer-title">See you in<br><span>Vice City.</span></p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#top">Back to top ↑</a>
+        <a href="#release">Release details</a>
+        <a href="#trailers">Official trailers</a>
+        <a href="https://www.rockstargames.com/VI" target="_blank" rel="noopener noreferrer">Rockstar Games ↗</a>
+      </nav>
     </div>
-
-    <div class="separator">:</div>
-
-    <div class="block">
-      <div id="seconds">00</div>
-      <div class="label">SECONDS</div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> GTA 6 Countdown. All rights reserved.</span>
+      <span>Independent fan project. Grand Theft Auto, GTA VI and associated imagery are trademarks and property of Rockstar Games and Take-Two Interactive.</span>
     </div>
+  </footer>
+
+  <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false">
+    <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span id="sound-label">Sound off</span>
+  </button>
+  <audio id="music" src="audio/music.mp3" loop preload="none"></audio>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Zoomable image preview">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image preview">×</button>
+    <div class="lightbox-stage" id="lightbox-stage">
+      <img id="lightbox-image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" width="1440" height="790" alt="">
+    </div>
+    <div class="lightbox-toolbar" aria-label="Image zoom controls">
+      <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
+      <output id="zoom-value" aria-live="polite">100%</output>
+      <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
+    </div>
+    <span class="lightbox-help">Scroll to zoom · drag to move · double-click to reset</span>
   </div>
-</div>
 
-<!-- Audio -->
-<audio id="music" src="audio/music.mp3" autoplay loop></audio>
+  <script>
+    const releaseDate = new Date(2026, 10, 19, 0, 0, 0);
+    const timeEls = {
+      days: document.getElementById('days'),
+      hours: document.getElementById('hours'),
+      minutes: document.getElementById('minutes'),
+      seconds: document.getElementById('seconds')
+    };
 
-<script>
-// ===== COUNTDOWN =====
-const TARGET = new Date("2026-11-19T00:00:00Z").getTime();
+    function updateCountdown() {
+      const remaining = Math.max(0, releaseDate.getTime() - Date.now());
+      const totalSeconds = Math.floor(remaining / 1000);
+      timeEls.days.textContent = String(Math.floor(totalSeconds / 86400)).padStart(3, '0');
+      timeEls.hours.textContent = String(Math.floor((totalSeconds % 86400) / 3600)).padStart(2, '0');
+      timeEls.minutes.textContent = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+      timeEls.seconds.textContent = String(totalSeconds % 60).padStart(2, '0');
+    }
 
-function updateCountdown() {
-  const now = Date.now();
-  let diff = Math.floor((TARGET - now) / 1000);
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
 
-  if (diff < 0) diff = 0;
+    const slides = [...document.querySelectorAll('.hero-slide')];
+    let slideIndex = 0;
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(() => {
+        slides[slideIndex].classList.remove('active');
+        slideIndex = (slideIndex + 1) % slides.length;
+        slides[slideIndex].classList.add('active');
+      }, 8500);
+    }
 
-  const d = Math.floor(diff / 86400);
-  const h = Math.floor((diff % 86400) / 3600);
-  const m = Math.floor((diff % 3600) / 60);
-  const s = diff % 60;
+    const header = document.getElementById('site-header');
+    const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 30);
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
 
-  document.getElementById("days").innerText = d;
-  document.getElementById("hours").innerText = String(h).padStart(2, '0');
-  document.getElementById("minutes").innerText = String(m).padStart(2, '0');
-  document.getElementById("seconds").innerText = String(s).padStart(2, '0');
-}
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    function closeMenu() {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open menu');
+      menuToggle.textContent = '☰';
+      document.body.classList.remove('menu-open');
+    }
+    menuToggle.addEventListener('click', () => {
+      const opening = !navLinks.classList.contains('open');
+      navLinks.classList.toggle('open', opening);
+      menuToggle.setAttribute('aria-expanded', String(opening));
+      menuToggle.setAttribute('aria-label', opening ? 'Close menu' : 'Open menu');
+      menuToggle.textContent = opening ? '×' : '☰';
+      document.body.classList.toggle('menu-open', opening);
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 
-setInterval(updateCountdown, 1000);
-updateCountdown();
+    document.querySelectorAll('.video-frame[data-video-id]').forEach(frame => {
+      const poster = frame.querySelector('.video-poster');
+      poster.addEventListener('click', () => {
+        const videoId = frame.dataset.videoId;
+        const videoTitle = frame.dataset.videoTitle;
+        const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
 
+        // YouTube cannot identify pages opened directly from file://, which causes Error 153.
+        // Use the external player for that preview mode; hosted HTTP(S) pages load inline.
+        if (window.location.protocol !== 'http:' && window.location.protocol !== 'https:') {
+          window.open(watchUrl, '_blank', 'noopener,noreferrer');
+          return;
+        }
 
-// ===== SLIDESHOW =====
-const slides = document.querySelectorAll(".bg");
-let index = 0;
+        const iframe = document.createElement('iframe');
+        const origin = encodeURIComponent(window.location.origin);
+        iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&playsinline=1&rel=0&origin=${origin}`;
+        iframe.title = videoTitle;
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.allowFullscreen = true;
+        frame.replaceChildren(iframe);
+      });
+    });
 
-setInterval(() => {
-  slides[index].classList.remove("active");
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
-}, 3000);
+    const audio = document.getElementById('music');
+    const soundToggle = document.getElementById('sound-toggle');
+    const soundLabel = document.getElementById('sound-label');
+    audio.volume = 0.36;
+    soundToggle.addEventListener('click', async () => {
+      if (audio.paused) {
+        try {
+          await audio.play();
+          soundToggle.classList.add('playing');
+          soundToggle.setAttribute('aria-pressed', 'true');
+          soundLabel.textContent = 'Sound on';
+        } catch (error) {
+          soundLabel.textContent = 'Tap again';
+        }
+      } else {
+        audio.pause();
+        soundToggle.classList.remove('playing');
+        soundToggle.setAttribute('aria-pressed', 'false');
+        soundLabel.textContent = 'Sound off';
+      }
+    });
 
+    const lightbox = document.getElementById('lightbox');
+    const lightboxStage = document.getElementById('lightbox-stage');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const zoomInButton = document.getElementById('zoom-in');
+    const zoomOutButton = document.getElementById('zoom-out');
+    const zoomValue = document.getElementById('zoom-value');
+    let zoomLevel = 1;
+    let panX = 0;
+    let panY = 0;
+    let dragStartX = 0;
+    let dragStartY = 0;
+    let dragOriginX = 0;
+    let dragOriginY = 0;
+    let dragging = false;
+    let dragMoved = false;
+    let previousFocus = null;
 
-// ===== AUDIO FIX =====
-const audio = document.getElementById("music");
-audio.volume = 0.6;
+    function renderZoom() {
+      lightboxImage.style.transform = `translate3d(${panX}px, ${panY}px, 0) scale(${zoomLevel})`;
+      lightboxImage.classList.toggle('is-zoomed', zoomLevel > 1);
+      zoomValue.textContent = `${Math.round(zoomLevel * 100)}%`;
+      zoomOutButton.disabled = zoomLevel <= 1;
+      zoomInButton.disabled = zoomLevel >= 3;
+    }
 
-// window.addEventListener("load", () => {
-//   audio.play().catch(() => {});
-// });
-window.addEventListener("load", () => {
-  audio.play().then(() => {
-    setTimeout(() => {
-      audio.muted = false;
-      audio.volume = 0.6;
-    }, 1000);
-  }).catch(() => {});
-});
+    function setZoom(nextZoom) {
+      zoomLevel = Math.min(3, Math.max(1, Math.round(nextZoom * 4) / 4));
+      if (zoomLevel === 1) {
+        panX = 0;
+        panY = 0;
+      }
+      renderZoom();
+    }
 
-</script>
+    function openLightbox(image, trigger) {
+      previousFocus = trigger;
+      zoomLevel = 1;
+      panX = 0;
+      panY = 0;
+      lightboxImage.src = image.currentSrc || image.src;
+      lightboxImage.alt = image.alt;
+      lightbox.classList.add('open');
+      document.body.classList.add('menu-open');
+      renderZoom();
+      lightboxClose.focus();
+    }
 
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.classList.remove('dragging');
+      document.body.classList.remove('menu-open');
+      setZoom(1);
+      if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
+    }
+
+    const zoomTargets = document.querySelectorAll('.media-tile, .archive-grid figure, .edition-card, .location-card, .story-card');
+    zoomTargets.forEach(target => {
+      const image = target.querySelector('img');
+      target.classList.add('zoom-target');
+      if (target.tagName !== 'BUTTON') {
+        target.setAttribute('role', 'button');
+        target.tabIndex = 0;
+        target.setAttribute('aria-label', `Open full-size image: ${image.alt}`);
+      }
+      target.addEventListener('click', () => openLightbox(image, target));
+      if (target.tagName !== 'BUTTON') {
+        target.addEventListener('keydown', event => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            openLightbox(image, target);
+          }
+        });
+      }
+    });
+
+    zoomInButton.addEventListener('click', () => setZoom(zoomLevel + .25));
+    zoomOutButton.addEventListener('click', () => setZoom(zoomLevel - .25));
+    lightboxImage.addEventListener('dblclick', () => setZoom(zoomLevel === 1 ? 2 : 1));
+    lightboxStage.addEventListener('wheel', event => {
+      event.preventDefault();
+      setZoom(zoomLevel + (event.deltaY < 0 ? .25 : -.25));
+    }, { passive: false });
+
+    lightboxStage.addEventListener('pointerdown', event => {
+      if (zoomLevel <= 1 || event.target !== lightboxImage) return;
+      dragging = true;
+      dragMoved = false;
+      dragStartX = event.clientX;
+      dragStartY = event.clientY;
+      dragOriginX = panX;
+      dragOriginY = panY;
+      lightbox.classList.add('dragging');
+      lightboxStage.setPointerCapture(event.pointerId);
+    });
+    lightboxStage.addEventListener('pointermove', event => {
+      if (!dragging) return;
+      const deltaX = event.clientX - dragStartX;
+      const deltaY = event.clientY - dragStartY;
+      dragMoved = dragMoved || Math.abs(deltaX) > 3 || Math.abs(deltaY) > 3;
+      panX = dragOriginX + deltaX;
+      panY = dragOriginY + deltaY;
+      renderZoom();
+    });
+    function endDrag(event) {
+      if (!dragging) return;
+      dragging = false;
+      lightbox.classList.remove('dragging');
+      if (lightboxStage.hasPointerCapture(event.pointerId)) lightboxStage.releasePointerCapture(event.pointerId);
+    }
+    lightboxStage.addEventListener('pointerup', endDrag);
+    lightboxStage.addEventListener('pointercancel', endDrag);
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxStage.addEventListener('click', event => {
+      if (event.target === lightboxStage && !dragMoved && zoomLevel === 1) closeLightbox();
+    });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') { closeLightbox(); closeMenu(); } });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
